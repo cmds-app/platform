@@ -6,8 +6,9 @@ New to the team? Start with **Conventions** to see how we organize code and name
 
 ## What you'll find here
 
+- [**Environment Setup**](./environment-setup.md) — how to set up a local environment to build and preview the docs site.
 - **Conventions** — the shared rules we follow across every CMDS repository: folder structure, project names, database and API naming, README files, style guide, task comment tokens, version numbers, and more.
-- **Tools** — the tools we recommend (IDEs, SSRS) and notes on how to install and configure them.
+- **Tools** — the tools we recommend and notes on how to install and configure them.
 - [**Projects**](../projects/index.md) — documentation for each CMDS project: what it does, how it fits together, and how to run it.
 
 ## Something missing?
