@@ -1,9 +1,13 @@
 site_name: CMDS Docs
 site_url: https://docs.cmds.app
 site_description: Developer documentation for CMDS projects.
-site_dir: dist
+site_dir: dist/docs
+
 repo_url: https://github.com/cmds-app/platform
 edit_uri: edit/main/platform/docs/
+
+exclude_docs: |
+  inline/
 
 theme:
   name: material
