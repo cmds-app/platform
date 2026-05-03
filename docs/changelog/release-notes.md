@@ -12,7 +12,7 @@ Release notes will be posted here as each release goes Live.
 
 The next update to the Live environment is on May 6, 2026 at 8:00 PM MDT.
 
-## Executive Summary
+## Business Summary
 
 **Scope.** This is a major release.
 It includes 370 code-change commits from 3 developers over multiple weeks, affecting 813 files.
@@ -26,17 +26,19 @@ Hundreds more pages potentially affected indirectly via shared helper code.
 
 **Risk.** This is a major release. Recommendation: Full test/review.
 
-Here is a comprehensive list of changes for pre-release testing. It was generated from the source code repository using the following command:
+## Technical Details
+
+Here is a list of changes for pre-release testing. It is based on differences between version 26.1 and 26.2 in the source code repository. This is the command used to identify differences:
 
 `git diff --name-only release/v26.1..release/v26.2`
 
-## 1. Modified Screens
+### 1. Modified Screens
 
 These screens had their markup or code-behind changed. Every URL below should be retested.
 
 > Screens that are not used by CMDS are omitted.
 
-### Specific to CMDS
+#### Specific to CMDS
 
 | Screen | URL |
 |---|---|
@@ -47,28 +49,28 @@ These screens had their markup or code-behind changed. Every URL below should be
 | Training expiry dates (report) | `ui/cmds/admin/reports/training-expiry-dates` |
 | Validate competency self-assessment | `ui/cmds/portal/validations/competencies/submit` |
 
-### Administrators — Assessments
+#### Administrators — Assessments
 
 | Screen | URL |
 |---|---|
 | Publish assessment form (quiz) | `ui/admin/assessments/forms/publish` |
 | Edit assessment question (quiz question) | `ui/admin/assessments/questions/change` |
 
-### Administrators — Contacts
+#### Administrators — Contacts
 
 | Screen | URL |
 |---|---|
 | View and edit reporting lines | `ui/admin/contacts/people/create-user-connection` |
 | Send a welcome email | `ui/admin/contacts/people/send-email` |
 
-### Administrators — Events
+#### Administrators — Events
 
 | Screen | URL |
 |---|---|
 | Edit class event | `ui/admin/events/classes/outline` |
 | Search class event registrations | `ui/admin/events/registrations/search` |
 
-### Administrators — Programs
+#### Administrators — Programs
 
 | Screen | URL |
 |---|---|
@@ -81,13 +83,13 @@ These screens had their markup or code-behind changed. Every URL below should be
 | Edit program settings per achievement | `ui/admin/learning/programs/modify-settings` |
 | Add achievements to a program | `ui/admin/learning/programs/tasks/assign` |
 
-### Administrators — Messages
+#### Administrators — Messages
 
 | Screen | URL |
 |---|---|
 | Edit the content for a message | `ui/admin/messages/content` |
 
-### Users/Learners
+#### Users/Learners
 
 | Screen | URL |
 |---|---|
@@ -101,14 +103,14 @@ These screens had their markup or code-behind changed. Every URL below should be
 | Start a course | `ui/portal/learning/course` |
 | View my profile | `ui/portal/profile` |
 
-## 2. High-Impact Page Layout Changes
+### 2. High-Impact Page Layout Changes
 
 These changes affect MANY forms. Smoke-test a representative page in each bucket below.
 
 - **Portal Layout** — every `ui/portal/*` page. Spot-check `ui/portal/home`, `ui/portal/learning/catalog`, `ui/portal/events/calendar`, `ui/portal/profile`.
 - **Admin Layout** — every `ui/admin/*` page. Spot-check `ui/admin/home`, `ui/admin/assessments/home`, `ui/admin/records/home`, `ui/admin/workflow/home`.
 
-## 3. Shared UI Component Changes — Pages to Retest by Module
+### 3. Shared UI Component Changes — Pages to Retest by Module
 
 Shared components used by multiple URLs affect multiple screens. Here is a list of screens to smoke-test and ensure no unexpected side-effects from changes to shared components.
 
